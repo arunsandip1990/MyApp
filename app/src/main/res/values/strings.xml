@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="search">Search</string>
+
+    <string-array name="nodata">
+        <item>No data</item>
+
+
+    </string-array>
+
+</resources>

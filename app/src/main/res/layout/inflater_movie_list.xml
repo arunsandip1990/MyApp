@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imageMovieThumbnail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitXY"/>
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageMovieThumbnail"
+        android:textSize="@dimen/textTitle"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/imageMovieThumbnail"
+        android:layout_alignRight="@+id/textYear"
+        android:layout_alignEnd="@+id/textYear" />
+    <!-- Release Year -->
+    <TextView
+        android:id="@+id/textYear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitle"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/textYear"
+
+        android:layout_toRightOf="@+id/imageMovieThumbnail"
+         />
+
+
+    <TextView
+        android:id="@+id/texType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textYear"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/texType"
+        android:layout_toRightOf="@+id/imageMovieThumbnail"
+      />
+
+</RelativeLayout>
